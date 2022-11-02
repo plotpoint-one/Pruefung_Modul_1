@@ -3,5 +3,14 @@ body{
 }
 
 img {
-    width : 600px;
+   width : 600px;
+}
+
+.img-rounded-border {
+    border: 10px solid red;
+    border-radius: 10px;
+}
+
+.hide{
+    display: none;
 }

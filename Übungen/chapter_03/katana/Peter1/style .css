@@ -1,0 +1,154 @@
+.main {
+    display: grid; 
+    grid-template-columns: repeat(12);
+    grid-template-rows: repeat(24, 5%);
+    height: 100vh; 
+    width: 100vw; 
+}
+
+.menu {
+    grid-column: 1/14; 
+    grid-row: 1/2; 
+    background-color: rgb(59, 61, 61);
+}
+
+.header {
+    grid-column: 1/13; 
+    grid-row: 2/5; 
+  /*  background-color: transparent;    */
+    text-align: center; 
+    padding-top: 45px;
+    background: url("header2.jpg"); 
+    background-size: cover;
+    color: rgb(82, 243, 246);
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 4px 4px rgb(8, 8, 8); 
+}
+
+ul {
+    list-style-type: none; 
+    margin: 5px; 
+    padding: 0;
+    background-color: transparent; 
+    font-size: 1.2em;
+    font-weight: bold;
+    align-items: center; 
+    justify-items: center;
+}
+
+li {
+    float: left; 
+    margin-left: 50px;
+     
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(205, 202, 202); 
+}
+
+li a:hover {
+    background-color: rgb(150, 150, 150);
+    color: white; 
+}
+
+#home {
+    margin-left: 0; 
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;     
+}
+
+.dropdown-content a {
+    position: relative;   
+    display: flex;
+    background-color:rgb(200, 200, 200);
+    color: black;
+}
+
+.drdwn-item {
+    padding: 10px; 
+    font-size: 1em; 
+    font-weight: bold; 
+    
+}
+
+
+.first-column {
+    width: 600px;
+    background-color:rgb(201, 247, 245);
+}
+
+.second-column {
+    width: 110px;
+    background-color:rgb(244, 249, 249);
+}
+
+.third-column {
+    width: 800px;
+    background-color:rgb(244, 249, 249);
+}
+
+.image {
+    grid-column: 2/4; 
+    grid-row: 6/10; 
+    background-color: rgb(122, 125, 125);  
+    display: grid; 
+    grid-template-columns: repeat(2);
+}
+
+table, tr, td {
+    border: 1px solid black;
+}
+
+.text-name-score {
+    grid-column: 4/11; 
+    grid-row: 6/10; 
+    background-color: rgb(231, 229, 208);    
+}
+
+.text {
+    margin-top: 20px; 
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 20px;  
+
+}
+
+.lessons-learned {
+    grid-column: 2/11; 
+    grid-row: 11/13; 
+    text-decoration: underline; 
+    background-color: rgb(127, 128, 127);    
+}
+
+.table-box {
+    grid-column: 2/11; 
+    grid-row: 14/20; 
+    background-color: rgb(147, 150, 148);  
+    display: grid; 
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;  
+}
+
+.table {
+    grid-column: 3/6; 
+    grid-row: 3/4; 
+    align-items: center;
+}
+
+.heading-table {
+    grid-column: 3/5; 
+    grid-row: 2/3; 
+    font-weight: bold;
+    font-size: 20px;  
+    text-decoration: underline; 
+}
+
+

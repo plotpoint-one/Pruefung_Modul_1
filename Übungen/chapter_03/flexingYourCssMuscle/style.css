@@ -1,0 +1,164 @@
+/* GENERAL */
+html {
+  font: 15px/1.6 sans-serif;
+  color: #333;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 960px;
+  height: 100vh;
+}
+
+a { text-decoration: none; }
+
+/* HEADER */
+header {
+  background: #666;
+  border-bottom: 1px solid #333;
+}
+
+nav { padding: 0.5em;}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/*Nav-List left side and inline*/
+nav li { margin-left: 0.5em;
+  display: inline;
+  list-style-type: none;   
+}
+
+
+nav li.main {
+  margin-left: 0;
+  font-weight: bold;
+}
+
+nav li.form { margin-left: auto; }
+
+nav a { color: #fff; }
+
+nav a:hover, nav a:active {
+  color: #ddd;
+}
+
+nav input[type="search"] {
+    border: 1px solid;
+    border-radius: .25em 0 0 .25em;
+    padding: .2em;
+}
+
+nav input[type="search"] + button {
+    border-radius: 0 .25em .25em 0;
+    border: 1px solid;
+    border-left: 0;
+    padding: 0.2em;
+}
+
+#toggle-nav { display: none; }
+
+/* MAIN SECTION */
+main { margin: 1em; }
+
+section {
+  display: grid;
+  grid-template-columns: auto auto; 
+}
+
+article.heading1{
+  grid-column: 1/2;
+}
+article.heading2{
+  grid-column: 2/3;
+}
+
+article.heading3{
+  grid-column: 1/2;
+  grid-row:2/3;
+}
+article.centered-vertical{
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-column: 2/3;
+  grid-row:2/3;
+
+
+}
+article.centered-horizontal{
+
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1/3;
+  grid-row:4/5;
+}
+section.hero {
+  background: url("https://picsum.photos/960") center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: -1em;
+  height: 100vh;
+}
+section h1 {
+    font-size: 3em;
+    text-shadow: 1px -1px #fff,
+                -1px  1px #fff,
+                -1px -1px #fff,
+                1px   1px #fff;
+}
+
+article {
+  margin: 2em 1em 1em;
+  border-bottom: 1px solid;
+}
+
+article:last-child { border-bottom: 0; }
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: .5em;
+}
+
+.centered-horizontal {
+  max-width: 50%;
+}
+
+.centered-vertical {
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+  line-height: 3;
+  background: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+/*IGENES*/
+/*Search to the right. NavBar*/
+.form {float:right;
+  margin-right:7px;}
+
+/*.hero h1{
+  text-align: center;
+}*/
+
+/*Center Text in "hero" vertically and horicontally*/
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

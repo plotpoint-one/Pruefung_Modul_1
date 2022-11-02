@@ -1,0 +1,55 @@
+.main {
+    display: grid; 
+    grid-template-columns: repeat(12);
+    grid-template-rows: repeat(24, 5%);
+    height: 100vh; 
+    width: 100vw; 
+}
+
+.menus {
+    grid-column: 1/12; 
+    grid-row: 1/2; 
+    background-color: rgb(85, 85, 236);
+}
+
+.header {
+    grid-column: 1/12; 
+    grid-row: 2/5; 
+    background-color: rgb(81, 176, 76);    
+}
+
+
+.image {
+    grid-column: 2/5; 
+    grid-row: 6/10; 
+    background-color: rgb(72, 155, 137);  
+    display: grid; 
+    grid-template-columns: repeat(2);
+
+}
+
+.text-name-score {
+    grid-column: 6/11; 
+    grid-row: 6/10; 
+    background-color: rgb(255, 230, 0);    
+}
+
+
+.lessons-learned {
+    grid-column: 2/11; 
+    grid-row: 11/13; 
+    background-color: rgb(0, 255, 247);    
+}
+
+.table {
+    grid-column: 2/11; 
+    grid-row: 14/19; 
+    background-color: rgb(0, 255, 85);    
+}
+
+.footer {
+    grid-column: 1/12; 
+    grid-row: 20/21; 
+    background-color: rgb(75, 64, 238);    
+}
+

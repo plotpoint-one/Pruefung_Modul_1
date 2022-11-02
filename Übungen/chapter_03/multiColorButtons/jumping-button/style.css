@@ -1,0 +1,19 @@
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    background-color: gray;
+    transform: translate(-50%, -50%);
+}
+
+
+#flip-flop-left {
+    float: left;
+ }
+ 
+ #flip-flop-right {
+     float: right;
+ }
+ 
+ .hide{display:none;}

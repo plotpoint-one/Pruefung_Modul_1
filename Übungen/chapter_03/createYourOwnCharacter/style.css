@@ -1,0 +1,39 @@
+img {
+    width: 20px;
+     height: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.menue {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+.dropdownGender {
+    grid-column: 2/3;
+}
+.dropdownRace {
+    grid-column: 3/4;
+}
+
+table {
+    width: 200px;
+    margin-top: 50px;
+    margin-left:50px;
+    border: 1px solid rgb(0, 0, 0);
+    table-layout: auto;
+
+}
+td{
+    text-align: left;
+}
+
+figcaption {
+    display: inline;
+  }
+
+

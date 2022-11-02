@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity=
+    "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+      
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, 
+            then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity=
+    "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous">
+        </script>
+          
+        <script src=
+    "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity=
+    "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous">
+        </script>
+          
+        <script src=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity=
+    "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous">
+        </script>
+
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>Your Own Character</title>
+</head>
+
+<body>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="12" size="10">
+    <button type="button" onclick="getTheName();">Submit!</button>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" onclick="changeTheGender()">
+        <option>female</option>
+        <option>male</option>
+        <option>dont't know</option>
+    </select>
+    <label for="races">Race:</label>
+    <select id="races" onclick="changeTheRace()">
+        <option>dog</option>
+        <option>cat</option>
+        <option>elephant</option>
+        <option>kangaroo</option>
+    </select>
+    <label for="classes">Class:</label>
+    <select id="classes" onclick="changeTheClass()">
+        <option>scientist</option>
+        <option>poet</option>
+        <option>lawyer</option>
+        <option>teacher</option>
+    </select>
+
+
+
+
+<div class="menue">
+
+    <div class="dropdownGender">
+        <button class="btn btn-success 
+                dropdown-toggle" type="button" 
+                id="dropdownMenuButton" 
+                data-toggle="dropdown"
+                aria-haspopup="true" 
+                aria-expanded="false">
+            Gender
+        </button>
+
+        <ul class="dropdown-menu" id="genderList"
+            aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item">
+                <img src=
+"./icons8-weiblich-16.png"
+                width="20" height="15"><a href="#"> Female</a> </li>
+            <li class="dropdown-item">
+                <img src=
+"./icons8-männlich-16.png" 
+                width="20" height="15"><a href="#"> Male</a> </li>
+        </ul>
+    </div>
+          
+
+
+        <div class="dropdownRace">
+            <button class="btn btn-success 
+                    dropdown-toggle" type="button" 
+                    id="dropdownMenuButton" 
+                    data-toggle="dropdown"
+                    aria-haspopup="true" 
+                    aria-expanded="false">
+                Race
+            </button>
+  
+            <ul class="dropdown-menu" id="characterList"
+                aria-labelledby="dropdownMenuButton">
+                <li class="dropdown-item">
+                    <img src=
+"./icons8-hundepark-16.png"
+                    width="20" height="15"><a href="#"> Dog</a> </li>
+                <li class="dropdown-item">
+                    <img src=
+"./icons8-katze-16.png" 
+                    width="20" height="15"><a href="#"> Cat</a> </li>
+                <li class="dropdown-item">
+                    <img src=
+"./icons8-elefant-16.png" 
+                    width="20" height="15"><a href="#"> Elephant</a> </li>
+                <li class="dropdown-item">
+                    <img src=
+"./icons8-känguru-16.png"
+                    width="20" height="15"><a href="#"> Kangaroo</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+<center>
+    <table id="my-table">
+        <tr>
+            <td>Name</td>
+        </tr>
+        <tr>
+            <td>Gender: <img id="female" class="hide" src=
+                "./icons8-weiblich-16.png"><figcaption id = "figCapFemale" class="hide"> Female</figcaption><img id="male" class = "hide" src=
+                "./icons8-männlich-16.png"><figcaption id = "figCapMale" class="hide"> Male</figcaption></td>
+        </tr>
+        <tr>
+            <td>Race: <img id="dog" class="hide" src=
+                "./icons8-hundepark-16.png"><figcaption id = "figCapDog" class="hide"> Dog</figcaption><img id="cat" class = "hide" src=
+                "./icons8-katze-16.png"><figcaption id = "figCapCat" class="hide"> Cat</figcaption><img id="elephant" class = "hide" src=
+                "./icons8-elefant-16.png"><figcaption id = "figCapElephant" class="hide"> Elephant</figcaption><img id="kangaroo"  class = "hide" src=
+                "./icons8-känguru-16.png"><figcaption id = "figCapKangaroo" class="hide"> Kangaroo</figcaption></td>
+        </tr>
+        <tr>
+            <td>Class</td>
+        </tr>
+    </table>
+</center>
+    
+</body>
+
+</html

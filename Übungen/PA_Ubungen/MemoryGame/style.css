@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-cell-container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.cell-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+}
+
+.cell {
+    height: 110px;
+    width: 90px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.cell:hover {
+    transform: scale(1.03);
+}
+

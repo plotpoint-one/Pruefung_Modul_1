@@ -1,0 +1,157 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+
+.main   {
+    display: grid;
+    gap: 10px;
+
+    position: relative;
+    grid-template-columns: repeat(13) auto;
+    height:100vh;    
+    width:100vw;
+    grid-template-rows: repeat(12) auto;
+}
+.menues {
+    padding-top: 1.2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    background-color: red;
+    grid-column: 1/14;
+    grid-row:1/2;
+}
+.header   {
+    padding-top: 1.2rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    background-color: green;
+    grid-column: 1/14;
+    grid-row: 2/3;
+}
+.score {
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    background-color: blueviolet;
+    grid-column: 2/13;
+    grid-row: 3/4;
+}
+#peter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    /*row-gap : 5px;*/
+    position: relative;
+    background-color: orange;
+    grid-column: 3/6;
+    grid-row: 4/7;
+}
+#benito {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    /*row-gap : 5px;*/
+    position: relative;
+    background-color: blue;
+    grid-column: 6/9;
+    grid-row: 4/7;
+}
+#rainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    /*row-gap : 5px;*/
+    position: relative;
+    background-color: yellow;
+    grid-column: 9/12;
+    grid-row: 4/7;
+}
+.footer{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:beige;
+    font-weight: 400;
+    background-color: darkblue;
+    grid-column: 1/14;
+    grid-row: 7/8;
+}
+.memberHigh {
+    grid-row: 1/2;
+}
+.memberLow{
+    background-color: bisque;
+    grid-row: 2/4;
+}
+.memberText{
+    margin: 1rem;
+    margin-right: 1rem;
+}
+.memberPic img{
+    width: 100%;
+    height: 100%;
+  display: block;
+}
+h1 {
+    position:absolute ;
+    margin-left: 60px;
+    font-size: 1.9rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    position:absolute ;
+}
+#member0{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+
+    position: relative;
+    background-color: orange;
+    grid-column: 3/6;
+    grid-row: 8/10;
+}
+#member1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+
+    position: relative;
+    background-color: blue;
+    grid-column: 6/9;
+    grid-row: 8/10;
+}
+#member2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+
+    position: relative;
+    background-color: yellow;
+    grid-column: 9/12;
+    grid-row: 8/10;
+}
+
+
+/*p {
+	font-size: 12px;
+}
+
+@media screen and (max-width: 500px) {
+	p {
+		font-size: 14px;
+	}
+}*/
